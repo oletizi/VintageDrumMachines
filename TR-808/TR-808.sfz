@@ -398,3 +398,32 @@ xfin_hi$cyDecay=48	xfout_hi$cyDecay=96
 sample=CY/CY7575.WAV
 xfin_hi$cyTone=96
 xfin_hi$cyDecay=96
+
+
+<group>
+group=13
+off_by=13
+key=45
+
+#define $ltTuning cc7
+pitch_on$ltTuning=2500
+
+<region>
+sample=LT/LT00.WAV
+			xfout_hi$ltTuning=12
+
+<region>
+sample=LT/LT10.WAV
+xfin_hi$ltTuning=12	xfout_hi$ltTuning=24
+
+<region>
+sample=LT/LT25.WAV
+xfin_hi$ltTuning=24	xfout_hi$ltTuning=48
+
+<region>
+sample=LT/LT50.WAV
+xfin_hi$ltTuning=48	xfout_hi$ltTuning=96
+
+<region>
+sample=LT/LT75.WAV
+xfin_hi$ltTuning=96
