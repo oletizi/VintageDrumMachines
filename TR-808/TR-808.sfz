@@ -53,6 +53,12 @@
 // Claves
 #define $clKey 75
 
+// Hand Clap
+#define $cpKey 39
+
+// Maracas
+#define $maKey 70
+
 <global>
 loop_mode=one_shot
 
@@ -619,3 +625,13 @@ xfin_hi$hcTuning=96
 <region>
 sample=CL/CL.WAV
 key=$clKey
+
+<group>
+<region>
+sample=CP/CP.WAV
+key=$cpKey
+
+<group>
+<region>
+sample=MA/MA.WAV
+key=$maKey
