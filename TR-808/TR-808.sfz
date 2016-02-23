@@ -1,7 +1,7 @@
 <global>
 loop_mode=one_shot
 
-<group> // BD
+<group> // Bass Drum
 group=10
 off_by=10
 key=36
@@ -136,3 +136,265 @@ xfin_hi$bdDecay=48	xfout_hi$bdDecay=96
 sample=BD/BD7575.WAV
 xfin_hi$bdTone=96
 xfin_hi$bdDecay=96
+
+<group> // Snare Drum
+group=11
+off_by=11
+key=38
+
+#define $sdTone cc3
+#define $sdSnappy cc4
+
+<region>
+sample=SD/SD0000.WAV
+			xfout_hi$sdTone=12
+			xfout_hi$sdSnappy=12
+
+<region>
+sample=SD/SD0010.WAV
+			xfout_hi$sdTone=12
+xfin_hi$sdSnappy=12	xfout_hi$sdSnappy=24
+
+<region>
+sample=SD/SD0025.WAV
+			xfout_hi$sdTone=12
+xfin_hi$sdSnappy=24	xfout_hi$sdSnappy=48
+
+<region>
+sample=SD/SD0050.WAV
+			xfout_hi$sdTone=12
+xfin_hi$sdSnappy=48	xfout_hi$sdSnappy=96
+
+ 
+<region>
+sample=SD/SD0075.WAV
+			xfout_hi$sdTone=12
+xfin_hi$sdSnappy=96	
+
+
+<region>
+sample=SD/SD1000.WAV
+xfin_hi$sdTone=12 	xfout_hi$sdTone=24
+			xfout_hi$sdSnappy=12
+
+ 
+<region>
+sample=SD/SD1025.WAV
+xfin_hi$sdTone=12	xfout_hi$sdTone=24
+xfin_hi$sdSnappy=24 	xfout_hi$sdSnappy=48
+ 
+<region>
+sample=SD/SD1050.WAV
+xfin_hi$sdTone=12	xfout_hi$sdTone=24
+xfin_hi$sdSnappy=48 	xfout_hi$sdSnappy=96
+ 
+<region>
+sample=SD/SD1075.WAV
+xfin_hi$sdTone=12 	xfout_hi$sdTone=24
+xfin_hi$sdSnappy=96
+
+<region>
+sample=SD/SD2500.WAV
+xfin_hi$sdTone=24	xfout_hi$sdTone=48
+			xfout_hi$sdSnappy=12
+
+<region>
+sample=SD/SD2510.WAV
+xfin_hi$sdTone=24	xfout_hi$sdTone=48
+xfin_hi$sdSnappy=12	xfout_hi$sdSnappy=24
+
+<region>
+sample=SD/SD2525.WAV
+xfin_hi$sdTone=24	xfout_hi$sdTone=48
+xfin_hi$sdSnappy=24	xfout_hi$sdSnappy=48
+
+<region>
+sample=SD/SD2550.WAV
+xfin_hi$sdTone=24	xfout_hi$sdTone=48
+xfin_hi$sdSnappy=48	xfout_hi$sdSnappy=96
+
+<region>
+sample=SD/SD2575.WAV
+xfin_hi$sdTone=24	xfout_hi$sdTone=48
+xfin_hi$sdSnappy=96
+
+<region>
+sample=SD/SD5000.WAV
+xfin_hi$sdTone=48	xfout_hi$sdTone=96
+			xfout_hi$sdSnappy=12
+
+<region>
+sample=SD/SD5010.WAV
+xfin_hi$sdTone=48	xfout_hi$sdTone=96
+xfin_hi$sdSnappy=12	xfout_hi$sdSnappy=24
+
+<region>
+sample=SD/SD5025.WAV
+xfin_hi$sdTone=48	xfout_hi$sdTone=96
+xfin_hi$sdSnappy=24	xfout_hi$sdSnappy=48
+
+<region>
+sample=SD/SD5050.WAV
+xfin_hi$sdTone=48	xfout_hi$sdTone=96
+xfin_hi$sdSnappy=48	xfout_hi$sdSnappy=96
+
+<region>
+sample=SD/SD5075.WAV
+xfin_hi$sdTone=48	xfout_hi$sdTone=96
+xfin_hi$sdSnappy=96
+
+<region>
+sample=SD/SD7500.WAV
+xfin_hi$sdTone=96
+			xfout_hi$sdSnappy=12
+
+<region>
+sample=SD/SD7510.WAV
+xfin_hi$sdTone=96
+xfin_hi$sdSnappy=12	xfout_hi$sdSnappy=24
+
+<region>
+sample=SD/SD7525.WAV
+xfin_hi$sdTone=96
+xfin_hi$sdSnappy=24	xfout_hi$sdSnappy=48
+
+<region>
+sample=SD/SD7550.WAV
+xfin_hi$sdTone=96
+xfin_hi$sdSnappy=48	xfout_hi$sdSnappy=96
+
+<region>
+sample=SD/SD7575.WAV
+xfin_hi$sdTone=96
+xfin_hi$sdSnappy=96
+
+<group> // Crash Cymbal
+group=12
+off_by=12
+key=49
+
+#define $cyTone cc5
+#define $cyDecay cc6
+
+<region>
+sample=CY/CY0000.WAV
+			xfout_hi$cyTone=12
+			xfout_hi$cyDecay=12
+
+<region>
+sample=CY/CY0010.WAV
+			xfout_hi$cyTone=12
+xfin_hi$cyDecay=12	xfout_hi$cyDecay=24
+
+<region>
+sample=CY/CY0025.WAV
+			xfout_hi$cyTone=12
+xfin_hi$cyDecay=24	xfout_hi$cyDecay=48
+
+<region>
+sample=CY/CY0050.WAV
+			xfout_hi$cyTone=12
+xfin_hi$cyDecay=48	xfout_hi$cyDecay=96
+
+ 
+<region>
+sample=CY/CY0075.WAV
+			xfout_hi$cyTone=12
+xfin_hi$cyDecay=96	
+
+
+<region>
+sample=CY/CY1000.WAV
+xfin_hi$cyTone=12 	xfout_hi$cyTone=24
+			xfout_hi$cyDecay=12
+
+ 
+<region>
+sample=CY/CY1025.WAV
+xfin_hi$cyTone=12	xfout_hi$cyTone=24
+xfin_hi$cyDecay=24 	xfout_hi$cyDecay=48
+ 
+<region>
+sample=CY/CY1050.WAV
+xfin_hi$cyTone=12	xfout_hi$cyTone=24
+xfin_hi$cyDecay=48 	xfout_hi$cyDecay=96
+ 
+<region>
+sample=CY/CY1075.WAV
+xfin_hi$cyTone=12 	xfout_hi$cyTone=24
+xfin_hi$cyDecay=96
+
+<region>
+sample=CY/CY2500.WAV
+xfin_hi$cyTone=24	xfout_hi$cyTone=48
+			xfout_hi$cyDecay=12
+
+<region>
+sample=CY/CY2510.WAV
+xfin_hi$cyTone=24	xfout_hi$cyTone=48
+xfin_hi$cyDecay=12	xfout_hi$cyDecay=24
+
+<region>
+sample=CY/CY2525.WAV
+xfin_hi$cyTone=24	xfout_hi$cyTone=48
+xfin_hi$cyDecay=24	xfout_hi$cyDecay=48
+
+<region>
+sample=CY/CY2550.WAV
+xfin_hi$cyTone=24	xfout_hi$cyTone=48
+xfin_hi$cyDecay=48	xfout_hi$cyDecay=96
+
+<region>
+sample=CY/CY2575.WAV
+xfin_hi$cyTone=24	xfout_hi$cyTone=48
+xfin_hi$cyDecay=96
+
+<region>
+sample=CY/CY5000.WAV
+xfin_hi$cyTone=48	xfout_hi$cyTone=96
+			xfout_hi$cyDecay=12
+
+<region>
+sample=CY/CY5010.WAV
+xfin_hi$cyTone=48	xfout_hi$cyTone=96
+xfin_hi$cyDecay=12	xfout_hi$cyDecay=24
+
+<region>
+sample=CY/CY5025.WAV
+xfin_hi$cyTone=48	xfout_hi$cyTone=96
+xfin_hi$cyDecay=24	xfout_hi$cyDecay=48
+
+<region>
+sample=CY/CY5050.WAV
+xfin_hi$cyTone=48	xfout_hi$cyTone=96
+xfin_hi$cyDecay=48	xfout_hi$cyDecay=96
+
+<region>
+sample=CY/CY5075.WAV
+xfin_hi$cyTone=48	xfout_hi$cyTone=96
+xfin_hi$cyDecay=96
+
+<region>
+sample=CY/CY7500.WAV
+xfin_hi$cyTone=96
+			xfout_hi$cyDecay=12
+
+<region>
+sample=CY/CY7510.WAV
+xfin_hi$cyTone=96
+xfin_hi$cyDecay=12	xfout_hi$cyDecay=24
+
+<region>
+sample=CY/CY7525.WAV
+xfin_hi$cyTone=96
+xfin_hi$cyDecay=24	xfout_hi$cyDecay=48
+
+<region>
+sample=CY/CY7550.WAV
+xfin_hi$cyTone=96
+xfin_hi$cyDecay=48	xfout_hi$cyDecay=96
+
+<region>
+sample=CY/CY7575.WAV
+xfin_hi$cyTone=96
+xfin_hi$cyDecay=96
