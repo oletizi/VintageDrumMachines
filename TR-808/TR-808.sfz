@@ -1,18 +1,44 @@
+#define $bdTone cc81
+#define	$bdDecay cc82
+#define $bdKey 36
+#define $bdGroup 10
+
+#define $sdTone cc83
+#define $sdSnappy cc84
+#define $sdKey 38
+#define $sdGroup 11
+
+#define $cyTone cc85
+#define $cyDecay cc86
+#define $cyKey 49
+#define $cyGroup 12
+
+#define $ltTuning cc87
+#define $ltKey 45
+#define $ltGroup 13
+
+#define $mtTuning cc88
+#define $mtLokey 47
+#define $mtHikey 48
+#define $mtGroup 14
+
+#define $htTuning cc89
+#define $htKey 50
+#define $htGroup 15
+
 <global>
 loop_mode=one_shot
 
 <group> // Bass Drum
-group=10
-off_by=10
-key=36
+group=$bdGroup
+off_by=$bdGroup
+key=$bdKey
 
 // Tone:  CC1
 // Decay: CC2
 // BDXXYY.WAV	XX: Tone
 //   		YY: Decay
 
-#define $bdTone cc1
-#define	$bdDecay cc2
 
 <region>
 sample=BD/BD0000.WAV
@@ -138,12 +164,9 @@ xfin_hi$bdTone=96
 xfin_hi$bdDecay=96
 
 <group> // Snare Drum
-group=11
-off_by=11
-key=38
-
-#define $sdTone cc3
-#define $sdSnappy cc4
+group=$sdGroup
+off_by=$sdGroup
+key=$sdKey
 
 <region>
 sample=SD/SD0000.WAV
@@ -269,12 +292,9 @@ xfin_hi$sdTone=96
 xfin_hi$sdSnappy=96
 
 <group> // Crash Cymbal
-group=12
-off_by=12
-key=49
-
-#define $cyTone cc5
-#define $cyDecay cc6
+group=$cyGroup
+off_by=$cyGroup
+key=$cyKey
 
 <region>
 sample=CY/CY0000.WAV
@@ -400,13 +420,12 @@ xfin_hi$cyTone=96
 xfin_hi$cyDecay=96
 
 
-<group>
-group=13
-off_by=13
-key=45
+<group> // Low Tom
+group=$ltGroup
+off_by=$ltGroup
+key=$ltKey
 
-#define $ltTuning cc7
-pitch_on$ltTuning=2500
+pitch_on$ltTuning=500
 
 <region>
 sample=LT/LT00.WAV
@@ -427,3 +446,59 @@ xfin_hi$ltTuning=48	xfout_hi$ltTuning=96
 <region>
 sample=LT/LT75.WAV
 xfin_hi$ltTuning=96
+
+<group> // Mid Tom
+group=$mtGroup
+off_by=$mtGroup
+lokey=$mtLokey
+hikey=$mtHikey
+
+pitch_on$mtTuning=2500
+
+<region>
+sample=MT/MT00.WAV
+			xfout_hi$mtTuning=12
+
+<region>
+sample=MT/MT10.WAV
+xfin_hi$mtTuning=12	xfout_hi$mtTuning=24
+
+<region>
+sample=MT/MT25.WAV
+xfin_hi$mtTuning=24	xfout_hi$mtTuning=48
+
+<region>
+sample=MT/MT50.WAV
+xfin_hi$mtTuning=48	xfout_hi$mtTuning=96
+
+<region>
+sample=MT/MT75.WAV
+xfin_hi$mtTuning=96
+
+<group> // High Tom
+group=$htGroup
+off_by=$htGroup
+key=$htKey
+
+pitch_on$htTuning=500
+
+<region>
+sample=HT/HT00.WAV
+			xfout_hi$htTuning=12
+
+<region>
+sample=HT/HT10.WAV
+xfin_hi$htTuning=12	xfout_hi$htTuning=24
+
+<region>
+sample=HT/HT25.WAV
+xfin_hi$htTuning=24	xfout_hi$htTuning=48
+
+<region>
+sample=HT/HT50.WAV
+xfin_hi$htTuning=48	xfout_hi$htTuning=96
+
+<region>
+sample=HT/HT75.WAV
+xfin_hi$htTuning=96
+
