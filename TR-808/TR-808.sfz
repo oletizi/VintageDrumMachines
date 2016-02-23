@@ -1,30 +1,51 @@
+// Bass Drum
 #define $bdTone cc81
 #define	$bdDecay cc82
 #define $bdKey 36
 #define $bdGroup 10
 
+// Snare Drum
 #define $sdTone cc83
 #define $sdSnappy cc84
 #define $sdKey 38
 #define $sdGroup 11
 
+// Cymbal
 #define $cyTone cc85
 #define $cyDecay cc86
 #define $cyKey 49
 #define $cyGroup 12
 
+// Low Tom
 #define $ltTuning cc87
 #define $ltKey 45
 #define $ltGroup 13
 
+// Mid Tom
 #define $mtTuning cc88
 #define $mtLokey 47
 #define $mtHikey 48
 #define $mtGroup 14
 
+// High Tom
 #define $htTuning cc89
 #define $htKey 50
 #define $htGroup 15
+
+// Low Conga
+#define $lcGroup 16
+#define $lcTuning cc90
+#define $lcKey 62
+
+// Mid Conga
+#define $mcGroup 17
+#define $mcTuning cc91
+#define $mcKey 63
+
+// Hi Conga
+#define $hcGroup 18
+#define $hcTuning cc92
+#define $hcKey 64
 
 <global>
 loop_mode=one_shot
@@ -502,3 +523,83 @@ xfin_hi$htTuning=48	xfout_hi$htTuning=96
 sample=HT/HT75.WAV
 xfin_hi$htTuning=96
 
+<group> // Low Conga
+group=$lcGroup
+off_by=$lcGroup
+key=$lcKey
+
+pitch_on$lcTuning=500
+
+<region>
+sample=LC/LC00.WAV
+			xfout_hi$lcTuning=12
+
+<region>
+sample=LC/LC10.WAV
+xfin_hi$lcTuning=12	xfout_hi$lcTuning=24
+
+<region>
+sample=LC/LC25.WAV
+xfin_hi$lcTuning=24	xfout_hi$lcTuning=48
+
+<region>
+sample=LC/LC50.WAV
+xfin_hi$lcTuning=48	xfout_hi$lcTuning=96
+
+<region>
+sample=LC/LC75.WAV
+xfin_hi$lcTuning=96
+
+<group> // Mid Conga
+group=$mcGroup
+off_by=$mcGroup
+key=$mcKey
+
+pitch_on$mcTuning=500
+
+<region>
+sample=MC/MC00.WAV
+			xfout_hi$mcTuning=12
+
+<region>
+sample=MC/MC10.WAV
+xfin_hi$mcTuning=12	xfout_hi$mcTuning=24
+
+<region>
+sample=MC/MC25.WAV
+xfin_hi$mcTuning=24	xfout_hi$mcTuning=48
+
+<region>
+sample=MC/MC50.WAV
+xfin_hi$mcTuning=48	xfout_hi$mcTuning=96
+
+<region>
+sample=MC/MC75.WAV
+xfin_hi$mcTuning=96
+
+<group> // Hi Conga
+group=$hcGroup
+off_by=$hcGroup
+key=$hcKey
+
+pitch_on$hcTuning=500
+
+<region>
+sample=HC/HC00.WAV
+			xfout_hi$hcTuning=12
+
+<region>
+sample=HC/HC10.WAV
+xfin_hi$hcTuning=12	xfout_hi$hcTuning=24
+
+<region>
+sample=HC/HC25.WAV
+xfin_hi$hcTuning=24	xfout_hi$hcTuning=48
+
+<region>
+sample=HC/HC50.WAV
+xfin_hi$hcTuning=48	xfout_hi$hcTuning=96
+
+<region>
+sample=HC/HC75.WAV
+xfin_hi$hcTuning=96
