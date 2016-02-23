@@ -10,6 +10,9 @@
 #define $sdKey 38
 #define $sdGroup 11
 
+// Rim Shot
+#define $rsKey 37
+
 // Cymbal
 #define $cyTone cc85
 #define $cyDecay cc86
@@ -311,6 +314,11 @@ xfin_hi$sdSnappy=48	xfout_hi$sdSnappy=96
 sample=SD/SD7575.WAV
 xfin_hi$sdTone=96
 xfin_hi$sdSnappy=96
+
+<group> // Rim Shot
+<region>
+sample=RS/RS.WAV
+key=$rsKey
 
 <group> // Crash Cymbal
 group=$cyGroup
