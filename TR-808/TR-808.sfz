@@ -1,0 +1,138 @@
+<global>
+loop_mode=one_shot
+
+<group> // BD
+group=10
+off_by=10
+key=36
+
+// Tone:  CC1
+// Decay: CC2
+// BDXXYY.WAV	XX: Tone
+//   		YY: Decay
+
+#define $bdTone cc1
+#define	$bdDecay cc2
+
+<region>
+sample=BD/BD0000.WAV
+			xfout_hi$bdTone=12
+			xfout_hi$bdDecay=12
+
+<region>
+sample=BD/BD0010.WAV
+			xfout_hi$bdTone=12
+xfin_hi$bdDecay=12	xfout_hi$bdDecay=24
+
+<region>
+sample=BD/BD0025.WAV
+			xfout_hi$bdTone=12
+xfin_hi$bdDecay=24	xfout_hi$bdDecay=48
+
+<region>
+sample=BD/BD0050.WAV
+			xfout_hi$bdTone=12
+xfin_hi$bdDecay=48	xfout_hi$bdDecay=96
+
+ 
+<region>
+sample=BD/BD0075.WAV
+			xfout_hi$bdTone=12
+xfin_hi$bdDecay=96	
+
+
+<region>
+sample=BD/BD1000.WAV
+xfin_hi$bdTone=12 	xfout_hi$bdTone=24
+			xfout_hi$bdDecay=12
+
+ 
+<region>
+sample=BD/BD1025.WAV
+xfin_hi$bdTone=12	xfout_hi$bdTone=24
+xfin_hi$bdDecay=24 	xfout_hi$bdDecay=48
+ 
+<region>
+sample=BD/BD1050.WAV
+xfin_hi$bdTone=12	xfout_hi$bdTone=24
+xfin_hi$bdDecay=48 	xfout_hi$bdDecay=96
+ 
+<region>
+sample=BD/BD1075.WAV
+xfin_hi$bdTone=12 	xfout_hi$bdTone=24
+xfin_hi$bdDecay=96
+
+<region>
+sample=BD/BD2500.WAV
+xfin_hi$bdTone=24	xfout_hi$bdTone=48
+			xfout_hi$bdDecay=12
+
+<region>
+sample=BD/BD2510.WAV
+xfin_hi$bdTone=24	xfout_hi$bdTone=48
+xfin_hi$bdDecay=12	xfout_hi$bdDecay=24
+
+<region>
+sample=BD/BD2525.WAV
+xfin_hi$bdTone=24	xfout_hi$bdTone=48
+xfin_hi$bdDecay=24	xfout_hi$bdDecay=48
+
+<region>
+sample=BD/BD2550.WAV
+xfin_hi$bdTone=24	xfout_hi$bdTone=48
+xfin_hi$bdDecay=48	xfout_hi$bdDecay=96
+
+<region>
+sample=BD/BD2575.WAV
+xfin_hi$bdTone=24	xfout_hi$bdTone=48
+xfin_hi$bdDecay=96
+
+<region>
+sample=BD/BD5000.WAV
+xfin_hi$bdTone=48	xfout_hi$bdTone=96
+			xfout_hi$bdDecay=12
+
+<region>
+sample=BD/BD5010.WAV
+xfin_hi$bdTone=48	xfout_hi$bdTone=96
+xfin_hi$bdDecay=12	xfout_hi$bdDecay=24
+
+<region>
+sample=BD/BD5025.WAV
+xfin_hi$bdTone=48	xfout_hi$bdTone=96
+xfin_hi$bdDecay=24	xfout_hi$bdDecay=48
+
+<region>
+sample=BD/BD5050.WAV
+xfin_hi$bdTone=48	xfout_hi$bdTone=96
+xfin_hi$bdDecay=48	xfout_hi$bdDecay=96
+
+<region>
+sample=BD/BD5075.WAV
+xfin_hi$bdTone=48	xfout_hi$bdTone=96
+xfin_hi$bdDecay=96
+
+<region>
+sample=BD/BD7500.WAV
+xfin_hi$bdTone=96
+			xfout_hi$bdDecay=12
+
+<region>
+sample=BD/BD7510.WAV
+xfin_hi$bdTone=96
+xfin_hi$bdDecay=12	xfout_hi$bdDecay=24
+
+<region>
+sample=BD/BD7525.WAV
+xfin_hi$bdTone=96
+xfin_hi$bdDecay=24	xfout_hi$bdDecay=48
+
+<region>
+sample=BD/BD7550.WAV
+xfin_hi$bdTone=96
+xfin_hi$bdDecay=48	xfout_hi$bdDecay=96
+
+<region>
+sample=BD/BD7575.WAV
+xfin_hi$bdTone=96
+xfin_hi$bdDecay=96

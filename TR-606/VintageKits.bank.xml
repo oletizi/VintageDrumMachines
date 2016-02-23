@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<AriaBank name="Vintage Kits" vendor="Me" version="1">
+  <AriaProgram name="TR-606">
+    <AriaElement path="tr606.sfz"/>
+  </AriaProgram>
+</AriaBank>

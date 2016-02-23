@@ -1,0 +1,75 @@
+<global>
+loop_mode=one_shot
+
+<region> // Acoustic Bass Drum
+key=35
+sample=BassDrum1.wav
+
+<region> // Bass Drum 1
+key=36
+sample=BassDrum2.wav
+
+<region> // Side Stick
+key=37
+sample=RimShot.wav
+
+<region> // Acoustic Snare
+key=38
+sample=Snare1.wav
+
+<region> // Hand Clap
+key=39
+sample=HandClap.wav
+
+<region> // Electric Snare
+key=40
+sample=Snare2.wav
+
+<region> // Low Tom
+key=45
+sample=LowTom.wav
+
+<region> // Low-Mid Tom
+key=47
+sample=MedTom.wav
+
+<region> // Hi-Mid Tom
+key=48
+sample=MedTom.wav
+
+<region> // Crash Cymbal 1
+key=49
+sample=Crash.wav
+
+<region> // High Tom
+key=50
+sample=HiTom.wav
+
+<region> // Ride Cymbal 1
+key=51
+sample=Ride.wav
+
+<region> // Tambourine
+key=54
+sample=Tamb.wav
+
+<region> // Cowbell
+key=56
+sample=CowBell.wav
+
+<group> // hihat group
+group=1
+off_by=1
+
+<region> // Closed Hi-Hat
+key=42
+sample=HhC.wav
+
+<region> // Pedal Hi-Hat
+key=44
+sample=
+
+<region> // Open Hi-Hat
+key=46
+sample=Hho.wav
+
