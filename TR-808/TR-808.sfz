@@ -50,6 +50,9 @@
 #define $hcTuning cc92
 #define $hcKey 64
 
+// Claves
+#define $clKey 75
+
 <global>
 loop_mode=one_shot
 
@@ -611,3 +614,8 @@ xfin_hi$hcTuning=48	xfout_hi$hcTuning=96
 <region>
 sample=HC/HC75.WAV
 xfin_hi$hcTuning=96
+
+<group>
+<region>
+sample=CL/CL.WAV
+key=$clKey
