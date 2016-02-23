@@ -2,4 +2,4 @@
 
 SFZ Sample Programs of Samples from:
 
-	[http://machines.hyperreal.org/samples.html]
+	<a href="http://machines.hyperreal.org/samples.html">Music Machines</a>
