@@ -59,6 +59,9 @@
 // Maracas
 #define $maKey 70
 
+// Cowbell
+#define $cbKey 56
+
 <global>
 loop_mode=one_shot
 
@@ -635,3 +638,8 @@ key=$cpKey
 <region>
 sample=MA/MA.WAV
 key=$maKey
+
+<group>
+<region>
+sample=CB/CB.WAV
+key=$cbKey
