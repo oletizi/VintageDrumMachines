@@ -660,20 +660,20 @@ key=42
 key=46
 <region>
 sample=OH/OH00.WAV
-			xfout_hi$ohDecay=12
+			xfout_hi$ohDecay=24
 
 <region>
 sample=OH/OH10.WAV
-xfin_hi$ohDecay=12	xfout_hi$ohDecay=24
+xfin_lo$ohDecay=0	xfout_hi$ohDecay=48
 
 <region>
 sample=OH/OH25.WAV
-xfin_hi$ohDecay=24	xfin_hi$ohDecay=48
+xfin_lo$ohDecay=24	xfin_hi$ohDecay=64
 
 <region>
 sample=OH/OH50.WAV
-xfin_hi$ohDecay=48	xfin_hi$ohDecay=96
+xfin_lo$ohDecay=48	xfin_hi$ohDecay=96
 
 <region>
 sample=OH/OH75.WAV
-xfin_hi$ohDecay=96
+xfin_lo$ohDecay=64
