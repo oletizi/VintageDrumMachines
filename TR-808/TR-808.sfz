@@ -62,6 +62,10 @@
 // Cowbell
 #define $cbKey 56
 
+// Hihats
+#define $hhGroup 19
+#define $ohDecay cc93
+
 <global>
 loop_mode=one_shot
 
@@ -643,3 +647,33 @@ key=$maKey
 <region>
 sample=CB/CB.WAV
 key=$cbKey
+
+<group>
+group=$hhGroup
+off_by=$hhGroup
+
+<region> // Closed Hihat
+sample=CH/CH.WAV
+key=42
+
+<group> // Open Hihat
+key=46
+<region>
+sample=OH/OH00.WAV
+			xfout_hi$ohDecay=12
+
+<region>
+sample=OH/OH10.WAV
+xfin_hi$ohDecay=12	xfout_hi$ohDecay=24
+
+<region>
+sample=OH/OH25.WAV
+xfin_hi$ohDecay=24	xfin_hi$ohDecay=48
+
+<region>
+sample=OH/OH50.WAV
+xfin_hi$ohDecay=48	xfin_hi$ohDecay=96
+
+<region>
+sample=OH/OH75.WAV
+xfin_hi$ohDecay=96
